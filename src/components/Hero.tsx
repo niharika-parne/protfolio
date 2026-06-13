@@ -1,6 +1,7 @@
 "use client";
 
 import React from "react";
+import Image from "next/image";
 
 const LinkedinIcon = (props: React.SVGProps<SVGSVGElement>) => (
   <svg viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2" fill="none" strokeLinecap="round" strokeLinejoin="round" {...props}>
@@ -28,16 +29,16 @@ export default function Hero() {
           {/* Text */}
           <div className="order-2 md:order-1">
             <h1 className="text-4xl sm:text-5xl font-bold tracking-tight text-zinc-900 leading-tight mb-6">
-              Hello! I&apos;m Niharika, an{" "}
-              <span className="bg-purple-100 px-1 rounded">AI &amp; Data Science</span>{" "}
-              engineer based in India.
+              Hello! I&apos;m Niharika, a{" "}
+              <span className="bg-zinc-100 px-1.5 py-0.5 rounded">software engineer</span>{" "}
+              based in India.
             </h1>
 
             <p className="text-zinc-500 text-base leading-relaxed mb-3">
               I build data-driven applications that are{" "}
               <span className="underline decoration-wavy decoration-zinc-300 underline-offset-4">user-friendly</span>,{" "}
               <span className="underline decoration-wavy decoration-zinc-300 underline-offset-4">efficient</span> and{" "}
-              <span className="bg-yellow-100 px-1 rounded">impactful</span>.
+              <span className="bg-zinc-100 px-1 rounded">impactful</span>.
             </p>
 
             <p className="text-zinc-500 text-base leading-relaxed mb-3">
@@ -74,16 +75,16 @@ export default function Hero() {
             </div>
           </div>
 
-          {/* Profile Image Placeholder */}
+          {/* Profile Image */}
           <div className="order-1 md:order-2 flex justify-center md:justify-end">
-            <div className="w-64 h-64 sm:w-80 sm:h-80 rounded-3xl bg-zinc-100 border border-zinc-200 flex items-center justify-center overflow-hidden">
-              <div className="text-center p-6">
-                <div className="w-24 h-24 mx-auto mb-4 rounded-full bg-zinc-200 flex items-center justify-center">
-                  <span className="text-3xl font-bold text-zinc-400">NP</span>
-                </div>
-                <p className="text-sm font-semibold text-zinc-700">Niharika Parne</p>
-                <p className="text-xs text-zinc-400 mt-1">AI &amp; Data Science</p>
-              </div>
+            <div className="w-64 h-64 sm:w-80 sm:h-80 rounded-3xl bg-zinc-100 border border-zinc-200 overflow-hidden relative shadow-sm">
+              <Image
+                src="/niharika.jpg"
+                alt="Niharika Parne"
+                fill
+                className="object-cover"
+                priority
+              />
             </div>
           </div>
         </div>
