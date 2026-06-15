@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import PageBackground from "@/components/PageBackground";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -13,9 +14,21 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Niharika Parne | AI & Data Science Engineer",
+  title: "Niharika Parne | Software Developer & AI/DS Engineer",
   description:
-    "Professional portfolio of Niharika Parne — AI & Data Science engineer with expertise in Python, Java, and full-stack web development.",
+    "Explore the personal portfolio of Niharika Parne — a passionate Software Developer specializing in Java, Python, and Web Technologies. View projects, skills, and certifications.",
+  keywords: [
+    "Niharika Parne",
+    "Software Developer",
+    "Java Developer",
+    "Python Programmer",
+    "Web Developer",
+    "Artificial Intelligence",
+    "Data Science",
+    "Portfolio",
+    "Sri Indu College"
+  ],
+  authors: [{ name: "Niharika Parne" }],
 };
 
 export default function RootLayout({
@@ -28,9 +41,11 @@ export default function RootLayout({
       lang="en"
       className={`${geistSans.variable} ${geistMono.variable} h-full scroll-smooth`}
     >
-      <body className="min-h-full bg-white text-zinc-900 flex flex-col antialiased">
+      <body className="min-h-full bg-[#030303] text-zinc-100 flex flex-col antialiased relative selection:bg-[#00f0ff]/20 selection:text-white">
+        <PageBackground />
         {children}
       </body>
     </html>
   );
 }
+
