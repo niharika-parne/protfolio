@@ -41,34 +41,6 @@ export default function Hero() {
       id="home"
       className="min-h-screen flex flex-col justify-center pt-28 pb-16 relative overflow-hidden z-10"
     >
-      {/* Floating Code Snippet 1 */}
-      <div className="absolute top-[20%] left-[8%] animate-float opacity-25 pointer-events-none hidden xl:block text-[11px] font-mono text-[#00f0ff] bg-zinc-955/80 border border-white/10 p-4 rounded-xl backdrop-blur-md shadow-2xl">
-        <div className="flex gap-1.5 mb-2 border-b border-white/5 pb-1.5">
-          <div className="w-2 h-2 rounded-full bg-red-500/60" />
-          <div className="w-2 h-2 rounded-full bg-yellow-500/60" />
-          <div className="w-2 h-2 rounded-full bg-green-500/60" />
-        </div>
-        <pre>{`const developer = {
-  name: "Niharika Parne",
-  role: "Software Developer",
-  skills: ["Java", "Python", "Web"]
-};`}</pre>
-      </div>
-
-      {/* Floating Code Snippet 2 */}
-      <div className="absolute bottom-[20%] right-[8%] animate-float-delayed opacity-25 pointer-events-none hidden xl:block text-[11px] font-mono text-[#a855f7] bg-zinc-955/80 border border-white/10 p-4 rounded-xl backdrop-blur-md shadow-2xl">
-        <div className="flex gap-1.5 mb-2 border-b border-white/5 pb-1.5">
-          <div className="w-2 h-2 rounded-full bg-red-500/60" />
-          <div className="w-2 h-2 rounded-full bg-yellow-500/60" />
-          <div className="w-2 h-2 rounded-full bg-green-500/60" />
-        </div>
-        <pre>{`public class Main {
-  public static void main(String[] args) {
-    System.out.println("Clean Code");
-  }
-}`}</pre>
-      </div>
-
       <div className="max-w-5xl mx-auto px-6 w-full grid grid-cols-1 md:grid-cols-12 gap-12 items-center">
         {/* Left Side: Content */}
         <div className="md:col-span-7 order-2 md:order-1 flex flex-col justify-center text-left">
